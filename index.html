@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #unmer {
+            width: 500px;
+            height: 500px;
+            background-color: aquamarine;
+        }
+    </style>
 </head>
+
 <body>
-    测试
+    <div id="unmer">
+
+    </div>
 </body>
+
 </html>
+
+<script>
+    var unmerClick = document.querySelector("#unmer")
+    unmerClick.onclick = function () {
+        unmerClick.style.backgroundColor = "red"
+    }
+</script>
