@@ -1,11 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 <body>
-    <span>测试</span>
+
+
+
+    <table id="example1" class="table table-bordered table-striped text-center">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>区域服务标号</th>
+                <th>ip</th>
+                <th>端口</th>
+                <th>状态</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr >
+                <td ><input type="text"></td>
+                <td ><p contenteditable="true">44654</p></td>
+                <td></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
+
 </html>
+<script>
+    var arr = ["A", "B", "C", "D"]
+    console.log(arr.indexOf('d'))
+    console.log(arr.slice(0, 3))
+    console.log(arr.slice(3))
+
+
+    var result = [
+        {
+            subject: 'math',
+            score1: 88
+        },
+        {
+            subject: 'chinese',
+            score2: 95
+        },
+        {
+            subject: 'english',
+            score3: 80
+        }
+    ]
+    var resultComput = function (n) {
+        for (var i = 0; i < n.length; i++) {
+            // return 
+        }
+        console.log(n[0].score1 + n[1].score2 + n[2].score3)
+    }
+    resultComput(result)
+    // for (var i = 0; i < result.length; i++) {
+    //     // return true
+    // }
+    // console.log(result[0].score1 + result[1].score2 + result[2].score3)
+    // console.log(result)
+
+
+    // var sum = result.reduce(function (prev, cur) {
+    //     // console.log(prev)
+    //     var arr = []
+
+    //     // console.log(cur) 
+    //     arr.push(cur.score)
+    //     // console.log(arr)
+    //     for(var i = 0;i<=arr.length;i++){
+
+    //         console.log(arr)
+    //     }
+    // }, 0);
+    // console.log(sum)
+</script>
